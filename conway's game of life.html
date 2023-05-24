@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conway's Game of Life Generator</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #0f5f23;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 48px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 20px auto;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    td {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+
+    .live {
+      background-color: #00fb00;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    button#startButton {
+      background-color: #ffea00;
+    }
+
+    button#startButton:hover {
+      background-color: #fb7405;
+    }
+
+    button#stopButton {
+      background-color: #5900fe;
+    }
+
+    button#stopButton:hover {
+      background-color: #0080ff;
+    }
+
+    p#generationCounter {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      color: #ff5202;
+    }
+  </style>
+</head>
+<body>
+  <h1>Conway's Game of Life Generator</h1>
+  <table id="grid"></table>
+  <div class="button-container"></div>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+  <p id="generationCounter">Generations: 0</p>
+
+  <script src="index.js"></script>
+</body>
+</html>
